@@ -1,0 +1,73 @@
+@media screen and (max-width: 799px) {
+	
+    body {
+        width: 100vw;
+        height: 100%;
+        position: relative;
+        @include flex(center, center, column);
+        background-color: White;
+    }
+    .wrapper {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        @include flex(center, center, column);
+        header{
+            text-align: center;
+            margin: 10% 0 15%;
+            .topDesc{
+                font-size: 26px;
+                font-weight: 400;
+                color: $GrayishBlue;
+            }
+            .lowDesc{
+                font-size: 26px;
+                width: 100%;
+                color: $VeryDarkBlue;
+            }
+            p{
+                font-size: 16px;
+                color: $GrayishBlue;
+                margin: 0 auto;
+                margin-top: 2%;
+                text-align: center;
+                width: 90%
+            }
+        }
+        .descriptions {
+            @include flex(flex-start, center, column);
+            .left{
+                align-self: center;
+                border-top: 4px solid $Cyan;
+            
+            }
+            .right{
+                align-self: center;
+                border-top: 4px solid $Blue;
+            }
+        }
+        .box {
+            @include boxMob;
+            margin-bottom: 5%;
+        }
+        .mid {
+            @include flex (center, center, column);
+            width: 100%;
+        .topMid{
+            border-top: 4px solid $Red;
+        }
+        .bottomMid{
+            border-top: 4px solid $Orange;
+        }
+        }
+    }
+    .attribution {
+        display: none;
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+    }
